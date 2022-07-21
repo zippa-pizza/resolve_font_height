@@ -1,9 +1,10 @@
 name: resolve_font_height
-description: A new Flutter package project.
+description: Flutter package to get the default font's height.
 
 version: 1.0.0
 
-homepage:
+homepage: https://github.com/zippa-pizza/resolve_font_height
+repository: https://github.com/zippa-pizza/resolve_font_height
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
