@@ -1,9 +1,11 @@
 # resolve_font_height
 
+[![CI](https://github.com/zippa-pizza/resolve_font_height/actions/workflows/ci.yml/badge.svg)](https://github.com/zippa-pizza/resolve_font_height/actions/workflows/ci.yml)
+
 ![Pub Version](https://img.shields.io/pub/v/resolve_font_height)
 ![GitHub](https://img.shields.io/github/license/zippa-pizza/resolve_font_height)
 
-![Coverage](https://github.com/zippa-pizza/resolve_font_height/blob/main/coverage_badge.svg)
+![Coverage](https://github.com/zippa-pizza/resolve_font_height/raw/main/coverage_badge.svg)
 
 ## Features
 
