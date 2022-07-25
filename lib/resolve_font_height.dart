@@ -7,9 +7,17 @@ import 'package:flutter/material.dart';
 ///
 /// If no [fontSize] is provided the default one will be used.
 double resolveFontHeight(BuildContext context, [double? fontSize]) {
-  final double height = DefaultTextStyle.of(context).style.height! *
-      (fontSize ?? DefaultTextStyle.of(context).style.fontSize!) *
-      MediaQuery.textScaleFactorOf(context);
+  fontSize ??= DefaultTextStyle.of(context).style.fontSize;
 
-  return height.ceilToDouble();
+  final TextPainter textPainter = TextPainter(
+    text: TextSpan(
+      text: '0',
+      style: DefaultTextStyle.of(context).style.copyWith(fontSize: fontSize),
+    ),
+    textDirection: TextDirection.ltr,
+    textScaleFactor: MediaQuery.textScaleFactorOf(context),
+    maxLines: 1,
+  )..layout();
+
+  return textPainter.size.height.ceilToDouble();
 }
