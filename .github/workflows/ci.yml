@@ -6,6 +6,9 @@ on:
       - '.github/workflows/ci.yml'
       - '**.dart'
       - 'pubspec.yaml'
+    # This is needed so that workflows are not triggered by tag pushes
+    branches:
+      - '**'
 
 env:
   FLUTTER_CHANNEL: stable
